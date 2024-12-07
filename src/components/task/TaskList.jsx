@@ -4,9 +4,9 @@ import 'devextreme/dist/css/dx.light.css';
 
 const TaskList = ({ tasks, onEdit, onDelete, onUpdateStatus }) => {
   return (
-    <div className="p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold mb-6">Task List</h2>
-      <div className="h-[80vh] ">
+    <div className="p-4 bg-white rounded-lg shadow-md md:p-6 lg:p-8">
+      <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:mb-6">Task List</h2>
+      <div className="h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
         <DataGrid
           dataSource={tasks}
           keyExpr="id"
@@ -15,7 +15,7 @@ const TaskList = ({ tasks, onEdit, onDelete, onUpdateStatus }) => {
           allowColumnResizing={true}
           allowColumnReordering={true}
           height="100%"
-          width="200%"
+          width="100%"
           columns={[
             { dataField: 'title', caption: 'Title', minWidth: 200 },
             { dataField: 'status', caption: 'Status', minWidth: 150 },

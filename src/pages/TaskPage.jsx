@@ -44,8 +44,8 @@ const TaskPage = () => {
   });
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold mb-6 text-center">Tasks</h1>
+    <div className="container mx-auto p-4 bg-white rounded-lg shadow-md md:p-6 lg:p-8">
+      <h1 className="text-3xl font-bold mb-6 text-center md:text-4xl">Tasks</h1>
       <div className="flex justify-between items-center mb-4">
         <button
           onClick={() => {
@@ -57,7 +57,7 @@ const TaskPage = () => {
           Add Task
         </button>
       </div>
-      <div className="mb-4">
+      <div className="mb-4 text-center">
         <button onClick={() => setFilter('All')} className={`mr-2 px-4 py-2 rounded ${filter === 'All' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}>All</button>
         <button onClick={() => setFilter('To-Do')} className={`mr-2 px-4 py-2 rounded ${filter === 'To-Do' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}>To-Do</button>
         <button onClick={() => setFilter('In-Progress')} className={`mr-2 px-4 py-2 rounded ${filter === 'In-Progress' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}>In-Progress</button>

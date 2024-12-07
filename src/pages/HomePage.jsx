@@ -36,7 +36,7 @@ const HomePage = () => {
       <h1 className="text-4xl font-bold mb-6 text-center">Welcome to the Task Management System</h1>
       <p className="mb-8 text-center text-lg">Track your tasks and stay organized.</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         <button onClick={() => setFilter('All')} className="bg-blue-100 p-6 rounded-lg shadow-md text-center focus:outline-none">
           <h2 className="text-xl font-semibold">Total Tasks</h2>
           <p className="text-2xl font-bold">{taskOverview.total}</p>

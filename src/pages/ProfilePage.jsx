@@ -2,11 +2,10 @@ import React from 'react';
 
 const ProfilePage = () => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl mb-4">User Profile</h1>
-      <div className="bg-white p-4 rounded shadow">
-        <h2 className="text-2xl mb-2">Username</h2>
-        <p className="mb-4">User's tasks and profile details will be displayed here.</p>
+    <div className="container mx-auto p-4 bg-white rounded-lg shadow-md md:p-6 lg:p-8">
+      <h1 className="text-3xl font-bold mb-6 text-center md:text-4xl">User Profile</h1>
+      <div className="text-center">
+        <p className="text-lg mb-4">Details about the user and their tasks will be displayed here.</p>
       </div>
     </div>
   );
